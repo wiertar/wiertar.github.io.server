@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- stable
+script:
+- npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: G+L/idC56703VX+AMb8zWjGbOHXxP7+nB/7tOvo7lq7fcGIDoKO3fjwmSNXjudUcoMvu3XR9QrjSlQrJBOxazhq0S8NkR65b7J2PunO/I2tuImsstnJfHmkZsEN6Z+ClFvR8AEhnIqoeFQdRHjOY2TcUAtVBh/zq/D02g0i5Ldg5HjbO44tiQXy93bas9KRHQsp8Z5WQxH1+0oaqWREU6a/9VNsDGyt17hbGmIAXhMv0K4zRmIsnwxYhS5El5IWooHuMEibAfWMDbVFJ3CnEvI49+THad1TNE9jmgMrMW3b+b3rvk5O4vx/WkEKETMkSJCuTIRyjudxZT5z7ayBJDZld/Tea6IPNDpQhgYL/jxGlxi6QgvCo8owxEe3Tyk3sbACZnyIj53FLjHOsRPEYhmQSvDVSdZmXH7c9UEEDKeYJcXpOuHFZXYyyIJr1PzPEhGyXS7HfwDJ5j/5kRYi2QyCAuhKugWEfVp5dD1SE4mrjVKO5WNNnajJsqDwVROcaWkqmZhJgyJ2TbEcd4ywfWXr9Ifpz67HHBJ4/yUQ/snD1gIhTFkt5lB7wsrtfZRcij3k3OZ61KGknlD4wiZtJw4vXu0+so5pIAsMKHA6bPndJDFyxiBuJaf6sEGslhPddV9Qg21XWSR7DDCWqkzQfSkNYuS1H5P9dkl7ck3immgQ=
+    app: gentle-waters-43988
+
