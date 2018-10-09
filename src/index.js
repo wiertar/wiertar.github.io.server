@@ -23,15 +23,13 @@ const loadData = async () => {
     );
     const skills = await client.db('portfolio-site').collection('skills');
     const skillsRes = await skills.find({}).toArray();
-    const skillsStr = JSON.stringify(await skillsRes);
     
     const projects = await client.db('portfolio-site').collection('projects');
     const projectsRes = await projects.find({}).toArray();
-    const projectsStr = JSON.stringify(await projectsRes);
 
     return {
-        skillsStr,
-        projectsStr
+        skillsRes,
+        projectsRes
     }
 };
 
