@@ -34,7 +34,8 @@ const loadData = async () => {
 };
 
 const corsOptions = {
-    origin: 'https://wiertar.github.io',
+    // origin: 'https://wiertar.github.io',
+    origin: '*', // open it up for now...
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
